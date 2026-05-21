@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #2563eb;
+    --cor-segundaria: #1e40af;
+    --cor-destaque: #f59e0b;
+    --cor-fundo: #f8fafc;
+    --cor-fundo-card: #ffffff;
+    --cor-texto: #1e293b;
+    --cor-sucesso: #10b981;
+    --cor-borda: #e2e8f0;
+    --sombra: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--cor-fundo-card);
+    border-bottom: 1px solid var(--cor-borda);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--sombra);
+}
+
+.navbar {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 64px;
+}
+
+.lista-nav {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+
+}
+
+.logo {
+    font-weight: 700;
+    font-size: large;
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.logo span {
+    font-size: 1.4rem;
+}
+
+/* Hero Section*/
+
+.hero {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563b2 60%, #3b82f6 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 24px;
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: 4.0rem;
+    margin-bottom: 10px;
+}
+
+.hero {
+    font-size: 1.8rem;
+    opacity: 0.85;
+}
+
+/*Configuração dos Botões*/
+
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.btn-primario{
+    background-color: white;
+    color: var(--cor-primaria);
+}
+
+.btn-secundario{
+    background-color: transparent;
+    color:white;
+    border: 2px solid rgba(255, 255, 255, 0.441);
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.845);
+}
+
+.button-hero{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*Seção de Cartões */
+
+.grid-cartoes{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 64px 24px;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo h2{
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.titulo p{
+    color: rgba(0, 0, 0, 0.564)
+}
+
+.card-group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.card{
+    background-color: var(--cor-fundo-card);
+    border: 1px solid var(--cor-borda);
+    padding: 28px;
+    border-radius: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover{
+    transform: translateY(-4px);
+    box-shadow: var(--sombra);
+}
+
+.card-icone{
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+}
+
+.azul{
+    background-color: rgb(219, 219,246);
+}
+
+.amarelo{
+    background-color: rgb(240, 240, 198);
+}
+
+.verde{
+    background-color: rgb(221, 246, 221);
+}
+
+.roxo{
+    background-color: rgb(249, 157, 249, 0.396);
+}
+
+.rosa{
+    background-color: rgb(255, 204, 212);
+}
